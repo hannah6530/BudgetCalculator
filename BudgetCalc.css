@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: aqua;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.623);
+}
+body{
+    background-color: aquamarine;
+}
+h2{
+    font-weight: bold;
+    color: greenyellow;
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+}
+.logo{
+    width: 55px;
+    left: 300px;
+    position: absolute;
+}
