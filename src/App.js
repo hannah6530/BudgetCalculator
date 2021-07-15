@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import CalcContainer from './Components/CalcContainer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  render(){
+
+    return (
+      <div>
+        <head>
+          <link href="BudgetCalc.css" rel="stylesheet" type="text/css"></link>
+        </head>
+         <body>
+           <div>
+             <nav>
+             <h2>Budget Calculator</h2>
+              <img class="logo" src="/images/calculator.png" alt="logo"/>
+             </nav>
+
+            </div>
+          </body>
+
+          <CalcContainer />
+      </div>
+    );
+
+
+  }
+
 }
 
 export default App;
