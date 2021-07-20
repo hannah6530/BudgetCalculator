@@ -12,11 +12,11 @@ nav{
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.623);
 }
 body{
-  background-color: aquamarine;
+  background-color: aquamarine !important;
 }
 h2{
-  font-weight: bold;
-  font-family:'Times New Roman', Times, serif;
+  font-weight: bold !important;
+  font-family:'Times New Roman', Times, serif !important;
   color: greenyellow;
   font-size: 30px;
   position: absolute;
@@ -24,7 +24,7 @@ h2{
 }
 .logo{
   width: 55px;
-  left: 300px;
+  left: 310px ;
   position: absolute;
 }
 #calc_container{
@@ -35,12 +35,61 @@ h2{
   padding: 15px 20px 18px 18px !important; /* CONTROLS SIZE AND DEPTH OF ITEM */
   /* padding: 15px 300px 18px 18px !important; */
   padding-bottom: 300px !important;
-  border-radius: 15px;  /* CONTROLS SHAPE OF ITEM */
+  /* CONTROLS SHAPE OF ITEM */
   /* box-shadow: 2px 5px 5px #333; */
   position: absolute;
   left: 200px;
   /* top: 30px; */
-  bottom: 300px;
+  bottom: 230px;
+}
+#budget{
+  width: 18% ;
+  background: #00FFFF;
+  padding: 15px ;
+  position: absolute ;
+  border-radius: 15px ; 
+  padding-bottom: 50px ;
+  left: 250px ;
+  bottom: 590px ;
+
+}
+#balance{
+  width: 18%;
+  background: #00FFFF;
+  padding: 15px;
+  position: absolute;
+  border-radius: 15px; 
+  padding-bottom: 90px;
+  left: 600px;
+  bottom: 590px;
+
+}
+#remaining{
+  width: 18%;
+  background: #00FFFF;
+  padding: 15px;
+  position: absolute;
+  border-radius: 15px; 
+  padding-bottom: 90px;
+  left: 950px;
+  bottom: 590px;
+
+}
+.button{
+  width: 25%;
+  position: absolute;
+  border-radius: 5px; 
+  padding: 12px;
+  background-color: #0d6dfd;
+  color: white;
+  left: 130px;
+  /* height: 30px;
+  
+  font-weight: bold;
+  padding: 6px 12px; */
+}
+.button:hover{
+  background-color: navy;
 }
 /*.budgetCalcTop{*/
 /*    width: 90%;*/

@@ -1,6 +1,9 @@
 import './App.css';
 import React from "react";
 import CalcContainer from './Components/CalcContainer'
+import Balance from './Components/Balance'
+import Budget from './Components/Budget'
+import Remaining from './Components/Remaining'
 
 class App extends React.Component {
 
@@ -22,6 +25,9 @@ class App extends React.Component {
           </body>
 
           <CalcContainer />
+          <Balance />
+          <Budget />
+          <Remaining />
       </div>
     );
 
