@@ -7,6 +7,27 @@ import Remaining from './Components/Remaining'
 
 class App extends React.Component {
 
+  state = {
+    balance: '',
+    budget: '',
+    remaining: '',
+    expenses: [],
+    id: 0
+  }
+
+  handleInput = (event) => {
+    this.setState({
+      budget: event.target.value
+    })
+    
+  }
+
+  handleSubmit = (event) => {
+    alert('Budget Updated!: ' + this.state.budget);
+    event.preventDefault();
+    // console.log(event.target.value)
+  }
+
   render(){
 
     return (
@@ -26,7 +47,11 @@ class App extends React.Component {
 
           <CalcContainer />
           <Balance />
-          <Budget />
+          <Budget 
+          handleBudgetInput={this.handleInput}
+          budget={this.state.budget}
+          handleSubmitBudget={this.handleSubmit}
+          />
           <Remaining />
       </div>
     );
