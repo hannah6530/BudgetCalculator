@@ -1,12 +1,19 @@
 import React from "react";
 import '../App.css';
+import Expense from './Expense'
 
-class CalcContainer extends React.Component{
 
-    render(){
+const CalcContainer = ({}) => {
+
+
         return(
             <div id="calc_container">
                 <div>
+                    <form>
+                        <input type='text' />
+                        <input className='space' type='text' />
+                        <input className='space' type='text' />
+                    </form>
                    
 
                 </div>
@@ -15,7 +22,6 @@ class CalcContainer extends React.Component{
             </div>
 
         );
-    }
 
 
 

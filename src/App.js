@@ -12,7 +12,11 @@ class App extends React.Component {
     budget: '',
     remaining: '',
     expenses: [],
-    id: 0
+    id: 0,
+    expense_name: '',
+    date: '',
+    cost: ''
+
   }
 
   handleInput = (event) => {
@@ -26,6 +30,28 @@ class App extends React.Component {
     alert('Budget Updated!: ' + this.state.budget);
     event.preventDefault();
     // console.log(event.target.value)
+  }
+
+  handleSubmitExpense = (event) => {
+    event.preventDefault();
+
+    const newExpense = {
+      id: this.state.id,
+      expense_description: this.state.expense_name,
+      date: this.state.date,
+      cost: this.state.cost
+    };
+
+    const expenseList = [...this.state.expenses, newExpense];
+
+    this.setState({
+      expenses: expenseList, //updating the expenses array with newly added expenses
+      expense_name: '', //resetting back to blank text box
+      date: '',
+      cost: '',
+      id: this.state.id + 1
+    })
+
   }
 
   render(){
