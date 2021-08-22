@@ -31,16 +31,16 @@ h2{
   margin: 10px;
   width: 70%;
   border: 2px solid #00FFFF;
-  background: #C8C8C8;
+  background: #1d2951;
   padding: 15px 20px 18px 18px; /* CONTROLS SIZE AND DEPTH OF ITEM */
   /* padding: 15px 300px 18px 18px !important; */
-  padding-bottom: 330px;
+  padding-bottom: 370px;
   /* CONTROLS SHAPE OF ITEM */
   /* box-shadow: 2px 5px 5px #333; */
   position: absolute;
   left: 200px;
   /* top: 30px; */
-  bottom: 230px;
+  bottom: 180px;
 }
 #budget{
   width: 18% ;
@@ -48,7 +48,7 @@ h2{
   padding: 15px ;
   position: absolute ;
   border-radius: 15px ; 
-  padding-bottom: 80px ;
+  padding-bottom: 55px ;
   left: 255px ;
   bottom: 615px ;
 
@@ -75,19 +75,7 @@ h2{
   bottom: 615px;
 
 }
-.button{
-  width: 25%;
-  position: absolute;
-  border-radius: 5px; 
-  padding: 12px;
-  background-color: #0d6dfd;
-  color: white;
-  left: 160px;
-  /* height: 30px;
-  
-  font-weight: bold;
-  padding: 6px 12px; */
-}
+
 .button:hover{
   background-color: navy;
 }
@@ -97,6 +85,7 @@ h2{
   top: 30px;
   font-size: larger;
 }
+
 /*.budgetCalcTop{*/
 /*    width: 90%;*/
 /*    background-color: blue;*/

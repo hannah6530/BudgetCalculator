@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import CalcContainer from './Components/CalcContainer'
+import ExpenseContainer from './Components/ExpenseContainer'
 import Balance from './Components/Balance'
 import Budget from './Components/Budget'
 import Remaining from './Components/Remaining'
@@ -13,9 +13,9 @@ class App extends React.Component {
     remaining: '',
     expenses: [],
     id: 0,
-    expense_name: '',
-    date: '',
-    cost: ''
+    expense_name: 'Expense',
+    date: 'Date',
+    cost: 'Cost'
 
   }
 
@@ -24,6 +24,21 @@ class App extends React.Component {
       budget: event.target.value
     })
     
+  }
+  handleExpenseInput = (event) => {
+    this.setState({
+      expense_name: event.target.value
+    })
+  }
+  handleDateInput = (event) => {
+    this.setState({
+      date: event.target.value
+    })
+  }
+  handleCostInput = (event) => {
+    this.setState({
+      cost: event.target.value
+    })
   }
 
   handleSubmit = (event) => {
@@ -51,7 +66,14 @@ class App extends React.Component {
       cost: '',
       id: this.state.id + 1
     })
+   
+    // console.log(event);
 
+  }
+  handleExpenses = (newExpense) => {
+    this.setState({
+      expenses: [...this.state.expenses, newExpense]
+    })
   }
 
   render(){
@@ -71,7 +93,17 @@ class App extends React.Component {
             </div>
           </body>
 
-          <CalcContainer />
+          <ExpenseContainer
+          handleExpenseList={this.handleExpenses}
+          expense={this.state.expense_name}
+          expenses={this.state.expenses}
+          date={this.state.date}
+          cost={this.state.cost}
+          handleCostInput={this.handleCostInput}
+          handleExpenseInput={this.handleExpenseInput}
+          handleDateInput={this.handleDateInput}
+          create_expense={this.handleSubmitExpense}
+           />
           <Balance />
           <Budget 
           handleBudgetInput={this.handleInput}
