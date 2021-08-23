@@ -11,6 +11,7 @@ const ExpenseContainer = ({expenses, expense, date, cost, handleExpenseInput, ha
                 <div id="form">
                    <form onSubmit={create_expense}>
                         <input 
+                        placeholder="Expense"
                         value={expense} 
                         type='text' 
                         onChange={handleExpenseInput} 
@@ -18,13 +19,16 @@ const ExpenseContainer = ({expenses, expense, date, cost, handleExpenseInput, ha
                         />
 
                         <input 
+                        placeholder="Date"
+                        className="position1"
                         value={date} 
                         type='text' 
                         onChange={handleDateInput} 
                         style={{color: "#C0C0C0"}} 
                         />
 
-                        <input  
+                        <input 
+                        placeholder="Cost" 
                         value={cost} 
                         type='text' 
                         onChange={handleCostInput} 

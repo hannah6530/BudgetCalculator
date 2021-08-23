@@ -13,9 +13,9 @@ class App extends React.Component {
     remaining: '',
     expenses: [],
     id: 0,
-    expense_name: 'Expense',
-    date: 'Date',
-    cost: 'Cost'
+    expense_name: '',
+    date: '',
+    cost: ''
 
   }
 

@@ -88,9 +88,23 @@ h2{
 #form{
   position: absolute;
     position: absolute;
-    bottom: 500px;
+    bottom: 300px;
+    right: 10%;
+}
+/* input[type=text], #form{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0; 
+  border: 1px #ccc;  
+  border-radius: 4px; 
 
-
+} */
+.position1{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0; 
+  border: 1px #ccc;  
+  border-radius: 4px; 
 }
 
 /*.budgetCalcTop{*/
