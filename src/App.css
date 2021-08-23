@@ -27,14 +27,14 @@ h2{
   left: 300px ;
   position: absolute;
 }
-#calc_container{
+#expense_container{
   margin: 10px;
   width: 70%;
   border: 2px solid #00FFFF;
   background: #1d2951;
   padding: 15px 20px 18px 18px; /* CONTROLS SIZE AND DEPTH OF ITEM */
   /* padding: 15px 300px 18px 18px !important; */
-  padding-bottom: 370px;
+  /* padding-bottom: 370px; */
   /* CONTROLS SHAPE OF ITEM */
   /* box-shadow: 2px 5px 5px #333; */
   position: absolute;
@@ -84,6 +84,13 @@ h2{
   left: 20px;
   top: 30px;
   font-size: larger;
+}
+#form{
+  position: absolute;
+    position: absolute;
+    bottom: 500px;
+
+
 }
 
 /*.budgetCalcTop{*/

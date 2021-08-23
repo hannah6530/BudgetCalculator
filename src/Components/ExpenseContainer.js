@@ -7,9 +7,9 @@ const ExpenseContainer = ({expenses, expense, date, cost, handleExpenseInput, ha
 
 
         return(
-            <div id="calc_container">
-                <div>
-                    <form onSubmit={create_expense}>
+            <div>
+                <div id="form">
+                   <form onSubmit={create_expense}>
                         <input 
                         value={expense} 
                         type='text' 
@@ -32,25 +32,29 @@ const ExpenseContainer = ({expenses, expense, date, cost, handleExpenseInput, ha
                         />
                         <button class="button">Add Expense</button>
                     </form>
-
-                    <div id="expense_list">
+                    </div>
+            
+         
                         <ul>
                             {
                                 expenses.map(expense => {
                                     return(
-                                        <Expense key={expense.id} handleExpenseList={handleExpenseList} expense_description={expense.expense_description}/>
+                                        <Expense key={expense.id} 
+                                        handleExpenseList={handleExpenseList} 
+                                        expense_description={expense.expense_description} 
+                                        date={expense.date}
+                                        cost={expense.cost}
+                                        />
                                     )
                                 })
                             }
                         </ul>
 
-                    </div>
+            </div>
+    
                    
 
-                </div>
                
-
-            </div>
 
         );
 

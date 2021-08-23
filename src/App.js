@@ -104,13 +104,15 @@ class App extends React.Component {
           handleDateInput={this.handleDateInput}
           create_expense={this.handleSubmitExpense}
            />
-          <Balance />
+          <Balance 
+          />
           <Budget 
           handleBudgetInput={this.handleInput}
           budget={this.state.budget}
           handleSubmitBudget={this.handleSubmit}
           />
-          <Remaining />
+          <Remaining 
+          />
       </div>
     );
 
