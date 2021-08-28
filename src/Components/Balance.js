@@ -8,7 +8,7 @@ class Balance extends React.Component{
     render(){
         return(
             <div id="balance">
-                <p>balance</p>
+                <p id="font_size">Balance</p>
             
         
             </div>

@@ -11,6 +11,7 @@ const ExpenseContainer = ({expenses, expense, date, cost, handleExpenseInput, ha
                 <div id="form">
                    <form onSubmit={create_expense}>
                         <input 
+                        className="input1"
                         placeholder="Expense"
                         value={expense} 
                         type='text' 
@@ -20,7 +21,7 @@ const ExpenseContainer = ({expenses, expense, date, cost, handleExpenseInput, ha
 
                         <input 
                         placeholder="Date"
-                        className="position1"
+                        className="input2"
                         value={date} 
                         type='text' 
                         onChange={handleDateInput} 
@@ -28,13 +29,14 @@ const ExpenseContainer = ({expenses, expense, date, cost, handleExpenseInput, ha
                         />
 
                         <input 
+                        className="input3"
                         placeholder="Cost" 
                         value={cost} 
                         type='text' 
                         onChange={handleCostInput} 
                         style={{color: "#C0C0C0"}}
                         />
-                        <button class="button">Add Expense</button>
+                        <button class="submit">Add Expense</button>
                     </form>
                     </div>
             
@@ -54,11 +56,7 @@ const ExpenseContainer = ({expenses, expense, date, cost, handleExpenseInput, ha
                             }
                         </ul>
 
-            </div>
-    
-                   
-
-               
+            </div>    
 
         );
 

@@ -2,19 +2,20 @@ import React from "react";
 import '../App.css';
 
 
-class Remaining extends React.Component{
+const Remaining  = ({}) => {
 
-    render(){
-        return(
-            <div id="remaining">
-                <p>remaining</p>
-        
-            </div>
+    return(
+        <div id="remaining">
+            <p id="font_size">Remaining</p>
+    
+        </div>
 
-        );
-    }
-
+    );
 
 
 }
+
+   
+
+
 export default Remaining;

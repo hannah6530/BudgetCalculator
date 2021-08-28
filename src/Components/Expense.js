@@ -9,9 +9,12 @@ class Expense extends React.Component {
 
         return(
             <div id="expense_container">
+                <ul>
                 <p> {expense_description} </p>
                 <p> {date} </p>
                 <p> {cost} </p>
+                </ul>
+               
                 
             </div>
 

@@ -8,11 +8,14 @@ const Budget = ({handleBudgetInput, budget, handleSubmitBudget}) => {
             <div id="budget">
                 {/* <p id="budget_title">budget:</p>
                 <div class="button">Edit</div> */}
+                <div id="budget_position">
                 <form onSubmit={handleSubmitBudget}>
-                  <label>budget: </label> 
-                  <input type="text" value={budget} onChange={handleBudgetInput} />
-                  <button className="button">Edit</button>
-                </form>              
+                  <label id="font_size">Budget: </label> 
+                  <input type="text" value={budget} onChange={handleBudgetInput} id="budget_form" />
+                  <button id="submit_budget">Edit</button>
+                </form> 
+                </div>
+                            
             </div>
 
         );
