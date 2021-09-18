@@ -53,28 +53,30 @@ h2{
   bottom: 617px ;
 
 }
-#balance{
-  width: 18%;
-  background: #00FFFF;
-  padding: 15px;
-  position: absolute;
-  border-radius: 15px; 
-  padding-bottom: 78px;
-  left: 580px;
-  bottom: 617px;
-
-}
 #remaining{
   width: 18%;
   background: #00FFFF;
   padding: 15px;
   position: absolute;
   border-radius: 15px; 
-  padding-bottom: 78px;
+  padding-bottom: 70px;
   left: 915px;
   bottom: 617px;
 
 }
+
+#balance{
+  width: 18%;
+  background: #00FFFF;
+  padding: 15px;
+  position: absolute;
+  border-radius: 15px; 
+  padding-bottom: 70px;
+  left: 580px;
+  bottom: 617px;
+
+}
+
 
 .button:hover{
   background-color: navy;
@@ -99,48 +101,29 @@ h2{
   border-radius: 4px; 
 
 } */
-.input1{
-  width: 50%;
+.input{
+  width: 30%;
   padding: 20px 27px;
-  margin: 8px 0; 
+  /* margin: 8px 0;  */
   border: 1px #ccc;  
   border-radius: 4px; 
-  position: relative;
+  /* position: relative;
   bottom: 149px;
-  right: 62%;
+  right: 60%; */
 }
-.input3{
-  width: 50%;
-  padding: 20px 27px;
-  margin: 8px 0; 
-  border: 1px #ccc;  
-  border-radius: 4px; 
-  position: relative;
-  bottom: 220px;
-  right: 10.0%;
-}
-.input2{
-  width: 50%;
-  padding: 20px 27px;
-  margin: 8px 0; 
-  border: 1px #ccc;  
-  border-radius: 4px; 
-  position: relative;
-  bottom: 150px;
-  right: 10%;
-}
+
 .submit{
     width: 25%;
     background-color: #1a119b;
     color: white;
     padding: 20px 27px;
-    margin: 8px 0;
+    margin: 8px 0; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    bottom: 100px;
+    bottom: 66px; 
     position: relative;
-    right: -300px;
+    right: -700px;
   }
   .submit:hover{
     background-color: #2c21c0;
@@ -148,7 +131,6 @@ h2{
   #submit_budget:hover{
     background-color: #2c21c0;
   }
-
 
   #budget_form{
     width: 40%;
@@ -160,7 +142,6 @@ h2{
   }
   #font_size{
     font-size: large;
-  
 
   }
 
@@ -176,12 +157,18 @@ h2{
     /* bottom: 100px; */
     position: relative;
     right: -5%;
-
+  }
+  .expense_list{
+    position: absolute;
+    bottom: 100px;
+    
   }
 
-
-
-
+  .income-form{
+    position: relative;
+    left: -295px;
+    top: -150px;
+  }
 
 
 /*.budgetCalcTop{*/
